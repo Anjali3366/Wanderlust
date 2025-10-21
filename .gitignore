@@ -1,23 +1,38 @@
-# Node modules
+# Node.js dependencies
 node_modules/
-
-# Environment variables
-.env
-
-# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build output
-/build
-/dist
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# OS-specific
+# Logs
+logs
+*.log
+logs/
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# IDE/editor files
+# Editor folders and files
 .vscode/
 .idea/
 *.suo
@@ -25,10 +40,6 @@ Thumbs.db
 *.njsproj
 *.sln
 
-# Dependency directory (for frontend in client folder)
-client/node_modules/
-client/.env
-client/build/
-
-# Optional: ignore coverage reports
-coverage/
+# Misc
+*.zip
+*.tar.gz
